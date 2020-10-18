@@ -1,0 +1,52 @@
+﻿这次重写应用了jQuery ，bootstrap.
+问题1：背景固定：
+        一开始使用了body的fixed布局，这个是body固定在了视口内，不能用鼠标上下滑动，固定背景用 background-attachment: fixed;  ，背景不会动，body可以滑动。
+为题2：获取页面高度
+        $(select).height(),select可以是任意选择器，获取内容区高度。其中window是指视口，即窗口大小，document是指整个html页面，他们的高度不一样。
+        outerHeight() ,包括padding,border 的高度
+        outerHeight(true) 包括padding, border, margin的高度
+        scrollTop()    滚动条到顶部的垂直高度，即页面被卷上去的高度
+        offset().top  某个元素的上边界到最顶部的距离
+问题3： 移动端获取触摸点活动距离
+        e.originalEvent.touches[0].clientX;    
+        触摸点事件
+            touchstart， touchmove , touchend, 
+        jquery定义触摸事件
+            $().on("touchstart",function(){...})
+        获取位置：
+            e.originalEvent.targetTouches[0].pageX   touchstart获取鼠标点位置
+            e.originalEvent.changedTouches[0].pageX  touchend获取鼠标点位置
+        touch对象属性：
+            clientX,clinetY   触摸目标在视口下的坐标
+            pageX,pageY      在页面中的坐标（client+滚动条距离)
+            screenX,screenY  在屏幕中的坐标（电脑屏幕，而非浏览器）
+            target           DOM节点目标
+            identifier       唯一标识ID
+问题4:  jQuery获取相邻元素
+        .next(),.prev(),   下一个，上一个同辈元素
+        .siblings()        所有同辈元素
+问题5：  jQuery 获取元素是否有某个属性
+        .hasClass("")判断元素是否有类
+问题6：  jQuery 监听元素内容的变化
+        change()     适用于表单元素，文本域，textarea，select
+        DOMNodeInserted()   适用于添加节点时监听的变化。
+        setInterval()       定时任务。
+问题7：  使用jquery 的内置轮播图插件的样式更改。
+问题8：  Array 对象方法：
+            concat()   链接两个或多个数组
+            join()     把数组的所有元素放入一个字符串，通过指定分隔符分割
+            pop()      删除并返回数组的最后一个元素
+            push()     数组末尾添加一个或多个元素
+            reverse()  颠倒数组中元素的顺序
+            shift()    删除并返回数组的第一个元素
+            unshift()   向数组开头添加一个或更多远元素
+            slice()    从某个已有的数组返回选定的元素
+            sort()     对数组的元素进行排序
+            splice(index,n)   删除从index开始的n个元素
+            toSource()   返回该对象的源代码
+            toString()   把数组转化为字符串，并返回结果
+            
+
+
+
+

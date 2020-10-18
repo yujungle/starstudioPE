@@ -1,0 +1,155 @@
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    /* overflow: hidden; */
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+i{
+    color: #fff;
+    opacity: 0.8;
+}
+body{
+    background-image: url("../images/background.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    height: 100vh;
+    width: 100vw;
+    /* position: fixed;    */
+    background-attachment: fixed;
+}
+section{
+    height: 100vh;
+    position: relative;
+}
+button{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background: none;
+    top:1.5rem;
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
+}
+.menu{
+    z-index: 100;
+    background-color: rgba(13,13,13,0.3);
+    position: absolute;
+    color: #fff;
+    transition: all 0.7s;
+    padding: 1rem;
+}
+header{
+    position: relative;
+}
+footer{
+    position: fixed;
+    width: 100%;
+    background:none;
+    text-align: center;
+    bottom: 3rem;
+}
+#index .menu{
+    width: 100vw;
+    top: 0;
+    transform: translateY(-100%); 
+}
+#index .menu a{
+    height: 2rem;
+    line-height: 2rem;
+}
+#index .line{
+    display: block;
+    /* z-index: 1001; */
+    position: absolute;
+    background-color: #fff;
+    width: 1px;
+    height:4.5rem;
+    top:20%;
+    left: 50%;
+    /* transform: rotateY(90deg); */
+    transform-origin: 100%;
+}
+#index .content{
+    position: absolute;
+    top:8rem;
+    width:100%;
+    text-align: center;
+    transition: all 0.7s;
+}
+#index .content span{
+    display: inline-block;
+    font-size: 3rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-bottom: 1px solid #fff;
+}
+#index .content p{
+    font-size: 1.5rem;
+}
+#about,#index,#contact,#product,#resume,#group{
+    position: relative;
+}
+#about .menu,#group .menu,#product .menu{
+    transform: translateX(-100%);  
+    position: absolute;
+    top:4.5rem; 
+}
+.menu a{
+    height: 3rem;
+    line-height: 3rem;
+
+}
+.content{
+    position: absolute;
+    top:8rem;
+    right: 0;
+    width:80%;
+}
+h2{
+    border-bottom:1px solid #fff;
+    padding-bottom: 1rem;
+}
+ p{
+    width: 100%;
+    padding: 1rem;
+    letter-spacing: 0.2rem;
+    overflow: auto;
+}
+.carousel{
+
+}
+.carousel-control-next,.carousel-control-prev{
+    opacity: 0;
+}
+.carousel-caption {
+    left: 5%;
+    right: 5%;
+}
+#group .groupsName{
+    position: relative;
+    left:-20%;
+}
+
+
+
+
+
+
+
+
