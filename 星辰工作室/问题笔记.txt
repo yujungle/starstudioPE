@@ -45,6 +45,12 @@
             splice(index,n)   删除从index开始的n个元素
             toSource()   返回该对象的源代码
             toString()   把数组转化为字符串，并返回结果
+问题9：  $().next(select)获取不了下一个指定的select元素，
+        $().next()  可以获取下一个同级元素。
+问题10： ajax 文件上传
+        普通数据上传直接使用data的key/value 即可
+        文件上传需要使用dataformat对象。
+        
             
 
 
